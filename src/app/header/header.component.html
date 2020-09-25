@@ -1,0 +1,33 @@
+
+ <!-- // <ion-button color="danger" (click)="getdata()">GetPosts</ion-button> -->
+ <ion-header>
+   <div class="main_div">
+     <hr>
+    <ion-button color="danger" (click)="NewsArticles()">GetTodayNews</ion-button>
+    <hr>
+   </div>
+ </ion-header>
+  
+  <!-- <ion-button color="primary" (click)="NewsSources()">GetNewsSources</ion-button> -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>LatestNewsSources</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div *ngFor="let article of mArticles">
+      <ion-card>
+        <img src={{article.urlToImage}} alt="" />
+        <ion-card-header>
+          <ion-card-subtitle>{{article.title}}</ion-card-subtitle>
+          <ion-card-title>{{article.source.name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{article.description}}
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-content>
+
+
+

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title> 
+  </ion-toolbar>
+</ion-header> 
+  <ion-button [routerLink]="['/about']">Go to About</ion-button>
+  <ion-button color="warning"  (click)="open()"></ion-button>
+  <ion-button color="warning"  (click)="open1()">SNACKBAR</ion-button>
+  <ion-button color="danger"  (click)="loaderload()">Loader</ion-button>
+  
+<ion-content>
+  <app-header></app-header>
+</ion-content>
+
+
